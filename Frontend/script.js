@@ -64,8 +64,7 @@ document.getElementById("send").addEventListener("click", async () => {
     let answer = {};
 
     await axios
-//         .post("http://localhost:5000/getChat", { promptVal: userData })
-        .post("https://chatbot-backend.netlify.app/getChat", { promptVal: userData })
+        .post("http://localhost:5000/getChat", { promptVal: userData })
         .then((response) => {
             answer = response.data;
         });

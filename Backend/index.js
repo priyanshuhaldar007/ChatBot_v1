@@ -11,8 +11,7 @@ app.use(bp.urlencoded({ extended: true }));
 dotenv.config();
 
 const corsOptions = {
-//     origin: "http://127.0.0.1:5500",
-    origin: "https://chatbotv1-frontend.netlify.app/",
+    origin: "http://127.0.0.1:5500",
     credentials: true, //access-control-allow-credentials:true
     optionSuccessStatus: 200,
 };
